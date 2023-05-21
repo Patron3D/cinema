@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/progressBar</item>
+    </style>
+
+    <style name="ButtonFilms">
+        ..
+        <item name="android:background">@drawable/button_item</item>
+        ..
+    </style>
+
+</resources>
