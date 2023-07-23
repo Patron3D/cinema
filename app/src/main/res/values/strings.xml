@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Cinema</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Информация предоставлена с сайта kinopoiskapiunofficial.tech</string>
+    <string name="developer">Dmitri Pushkarev ™</string>
+    <string name="start">Кинопоиск</string>
+    <string name="kinopoiskId">000</string>
+    <string name="nameRu">Name</string>
+    <string name="skillcinema">Skillcinema</string>
+    <string name="skip">Пропустить</string>
+    <string name="text_top_one">Узнавай</string>
+    <string name="text_bottom_one">о премьерах</string>
+    <string name="text_top_second">Создавай</string>
+    <string name="text_bottom_second">коллекции</string>
+    <string name="text_top_third">Делись</string>
+    <string name="text_bottom_third">с друзьями</string>
+    <string name="point">.</string>
+    <string name="title">Название</string>
+    <string name="genre">Жанр</string>
+    <string name="year">Год</string>
+    <string name="viewed">Просмотрен:</string>
+    <string name="home">Home</string>
+    <string name="premieres">Премьеры</string>
+    <string name="top_250">Top 250</string>
+    <string name="popular">Популярные</string>
+    <string name="series">Сериалы</string>
+    <string name="all">Все</string>
+    <string name="countryRu">Страна</string>
+    <string name="rating">0.0</string>
+    <string name="country">Страна</string>
+    <string name="age">16+</string>
+    <string name="filmLength">1ч 33мин</string>
+    <string name="name_actor">Имя актера</string>
+    <string name="role">Роль</string>
+    <string name="similar_films">Похожие фильмы</string>
+    <string name="actors">Актеры</string>
+    <string name="profession">Профессия</string>
+    <string name="name">Имя</string>
+    <string name="filmography">Фильмография</string>
+    <string name="top_ten">Лучшая десятка</string>
+    <string name="image_big">image_big</string>
+    <string name="season_and_series">Сезоны и серии</string>
+
+    <plurals name="count_films">
+        <item quantity="one">%1$d фильм</item>
+        <item quantity="two">%1$d фильма</item>
+        <item quantity="few">%1$d фильма</item>
+        <item quantity="many">%1$d фильмов</item>
+        <item quantity="other">%1$d фильмов</item>
+    </plurals>
+
+    <plurals name="count_series">
+        <item quantity="one">%1$d серия</item>
+        <item quantity="two">%1$d серии</item>
+        <item quantity="few">%1$d серий</item>
+        <item quantity="many">%1$d серий</item>
+        <item quantity="other">%1$d серий</item>
+    </plurals>
+
+    <plurals name="count_season">
+        <item quantity="one">%1$d сезон</item>
+        <item quantity="two">%1$d сезона</item>
+        <item quantity="few">%1$d сезона</item>
+        <item quantity="many">%1$d сезонов</item>
+        <item quantity="other">%1$d сезонов</item>
+    </plurals>
+
+</resources>

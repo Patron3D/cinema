@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="my.project.cinema.fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_randomFragment"
+            app:destination="@id/randomFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_bestFilmsFragment"
+            app:destination="@id/bestFilmsFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_premiersFragment"
+            app:destination="@id/premiersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="my.project.cinema.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_premiersFragment"
+            app:destination="@id/premiersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bestFilmsFragment"
+            app:destination="@id/bestFilmsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_randomFragment"
+            app:destination="@id/randomFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="my.project.cinema.startfragments.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="my.project.cinema.startfragments.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="my.project.cinema.startfragments.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/loaderFragment"
+        android:name="my.project.cinema.startfragments.LoaderFragment"
+        android:label="fragment_loader"
+        tools:layout="@layout/fragment_loader" />
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="my.project.cinema.startfragments.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" >
+        <action
+            android:id="@+id/action_viewFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slode_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/premiersFragment"
+        android:name="my.project.cinema.ui.premieres.PremieresFragment"
+        android:label="fragment_premiers"
+        tools:layout="@layout/fragment_premiers" >
+        <action
+            android:id="@+id/action_premiersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_premiersFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_premiersFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bestFilmsFragment"
+        android:name="my.project.cinema.ui.bestfilms.BestFilmsFragment"
+        android:label="fragment_best_films"
+        tools:layout="@layout/fragment_best_films" >
+        <action
+            android:id="@+id/action_bestFilmsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_bestFilmsFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_bestFilmsFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="my.project.cinema.ui.popular.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_popularFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_popularFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_popularFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="my.project.cinema.ui.series.SeriesFragment"
+        android:label="fragment_series"
+        tools:layout="@layout/fragment_series" >
+        <action
+            android:id="@+id/action_seriesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_seriesFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_seriesFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <action
+            android:id="@+id/action_seriesFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomFragment"
+        android:name="my.project.cinema.ui.random.RandomFragment"
+        android:label="fragment_random"
+        tools:layout="@layout/fragment_random" >
+        <action
+            android:id="@+id/action_randomFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_randomFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_randomFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmPageFragment"
+        android:name="my.project.cinema.ui.filmpage.FilmPageFragment"
+        android:label="fragment_film_page"
+        tools:layout="@layout/fragment_film_page" >
+        <action
+            android:id="@+id/action_filmPageFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_premiersFragment"
+            app:destination="@id/premiersFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_bestFilmsFragment"
+            app:destination="@id/bestFilmsFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_randomFragment"
+            app:destination="@id/randomFragment" />
+        <argument
+            android:name="imdb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_fullScreenFragment"
+            app:destination="@id/fullScreenFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_similarFilmFragment"
+            app:destination="@id/similarFilmFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_allActorFragment"
+            app:destination="@id/allActorFragment" />
+        <argument
+            android:name="actor_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_actorPageFragment"
+            app:destination="@id/actorPageFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_allDirectorFragment"
+            app:destination="@id/allDirectorFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_directorPageFragment"
+            app:destination="@id/directorPageFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_filmographyFragment"
+            app:destination="@id/filmographyFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_topTenFragment"
+            app:destination="@id/topTenFragment" />
+        <action
+            android:id="@+id/action_filmPageFragment_to_filmographyDirectorFragment"
+            app:destination="@id/filmographyDirectorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullScreenFragment"
+        android:name="my.project.cinema.ui.fullscreenimage.FullScreenFragment"
+        android:label="fragment_full_screen"
+        tools:layout="@layout/fragment_full_screen" >
+        <action
+            android:id="@+id/action_fullScreenFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <argument
+            android:name="imdb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_fullScreenFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/similarFilmFragment"
+        android:name="my.project.cinema.ui.similarfilms.SimilarFilmFragment"
+        android:label="SimilarFilmFragment" >
+        <action
+            android:id="@+id/action_similarFilmFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <action
+            android:id="@+id/action_similarFilmFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allActorFragment"
+        android:name="my.project.cinema.ui.allactor.AllActorFragment"
+        android:label="AllActorFragment" >
+        <action
+            android:id="@+id/action_allActorFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <argument
+            android:name="actor_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="imdb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_allActorFragment_to_actorPageFragment"
+            app:destination="@id/actorPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actorPageFragment"
+        android:name="my.project.cinema.ui.actorpage.ActorPageFragment"
+        android:label="fragment_actor_page"
+        tools:layout="@layout/fragment_actor_page" >
+        <action
+            android:id="@+id/action_actorPageFragment_to_allActorFragment"
+            app:destination="@id/allActorFragment" />
+        <argument
+            android:name="actordb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_actorPageFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <action
+            android:id="@+id/action_actorPageFragment_to_fullImageFragment"
+            app:destination="@id/fullImageFragment" />
+        <action
+            android:id="@+id/action_actorPageFragment_to_topTenFragment"
+            app:destination="@id/topTenFragment" />
+        <action
+            android:id="@+id/action_actorPageFragment_to_filmographyFragment"
+            app:destination="@id/filmographyFragment" />
+        <action
+            android:id="@+id/action_actorPageFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allDirectorFragment"
+        android:name="my.project.cinema.ui.alldirectorpage.AllDirectorFragment"
+        android:label="AllDirectorFragment" >
+        <action
+            android:id="@+id/action_allDirectorFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <argument
+            android:name="all_directors_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_allDirectorFragment_to_directorPageFragment"
+            app:destination="@id/directorPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullImageFragment"
+        android:name="my.project.cinema.ui.actorpage.FullImageFragment"
+        android:label="fragment_full_image"
+        tools:layout="@layout/fragment_full_image" >
+        <action
+            android:id="@+id/action_fullImageFragment_to_actorPageFragment"
+            app:destination="@id/actorPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/directorPageFragment"
+        android:name="my.project.cinema.ui.directorpage.DirectorPageFragment"
+        android:label="fragment_director_page"
+        tools:layout="@layout/fragment_director_page" >
+        <action
+            android:id="@+id/action_directorPageFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+        <action
+            android:id="@+id/action_directorPageFragment_to_allDirectorFragment"
+            app:destination="@id/allDirectorFragment" />
+        <argument
+            android:name="directordb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_directorPageFragment_to_topTenFragment"
+            app:destination="@id/topTenFragment" />
+        <action
+            android:id="@+id/action_directorPageFragment_to_fullImageDirectorFragment"
+            app:destination="@id/fullImageDirectorFragment" />
+        <action
+            android:id="@+id/action_directorPageFragment_to_filmographyDirectorFragment"
+            app:destination="@id/filmographyDirectorFragment" />
+        <action
+            android:id="@+id/action_directorPageFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topTenFragment"
+        android:name="my.project.cinema.ui.topten.BestTenFragment"
+        android:label="TopTenFragment" >
+        <action
+            android:id="@+id/action_topTenFragment_to_actorPageFragment"
+            app:destination="@id/actorPageFragment" />
+        <action
+            android:id="@+id/action_topTenFragment_to_directorPageFragment"
+            app:destination="@id/directorPageFragment" />
+        <argument
+            android:name="topdb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_topTenFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmographyFragment"
+        android:name="my.project.cinema.ui.filmography.FilmographyFragment"
+        android:label="fragment_filmography"
+        tools:layout="@layout/fragment_filmography" >
+        <action
+            android:id="@+id/action_filmographyFragment_to_actorPageFragment"
+            app:destination="@id/actorPageFragment" />
+        <argument
+            android:name="filmographydb_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_filmographyFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullImageDirectorFragment"
+        android:name="my.project.cinema.ui.directorpage.FullImageDirectorFragment"
+        android:label="fragment_full_image_director"
+        tools:layout="@layout/fragment_full_image_director" >
+        <action
+            android:id="@+id/action_fullImageDirectorFragment_to_directorPageFragment"
+            app:destination="@id/directorPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmographyDirectorFragment"
+        android:name="my.project.cinema.ui.filmographydirector.FilmographyDirectorFragment"
+        android:label="fragment_filmography_director"
+        tools:layout="@layout/fragment_filmography_director" >
+        <action
+            android:id="@+id/action_filmographyDirectorFragment_to_directorPageFragment"
+            app:destination="@id/directorPageFragment" />
+        <argument
+            android:name="filmography_director_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_filmographyDirectorFragment_to_filmPageFragment"
+            app:destination="@id/filmPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesInfoFragment"
+        android:name="my.project.cinema.ui.seriesseasons.SeriesInfoFragment"
+        android:label="fragment_series_info"
+        tools:layout="@layout/fragment_series_info" >
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+        <argument
+            android:name="seriesinfo_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_actorPageFragment"
+            app:destination="@id/actorPageFragment" />
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_directorPageFragment"
+            app:destination="@id/directorPageFragment" />
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_similarFilmFragment"
+            app:destination="@id/similarFilmFragment" />
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_fullScreenFragment"
+            app:destination="@id/fullScreenFragment" />
+        <action
+            android:id="@+id/action_seriesInfoFragment_to_seasonsFragment"
+            app:destination="@id/seasonsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seasonsFragment"
+        android:name="my.project.cinema.ui.season.SeasonsFragment"
+        android:label="fragment_seasons"
+        tools:layout="@layout/fragment_seasons" >
+        <argument
+            android:name="season_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_seasonsFragment_to_seriesInfoFragment"
+            app:destination="@id/seriesInfoFragment" />
+    </fragment>
+</navigation>
